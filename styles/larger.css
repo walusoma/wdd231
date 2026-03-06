@@ -1,0 +1,20 @@
+@media (min-width:768px){
+
+#menu{
+display:none;
+}
+
+.navigation{
+display:flex;
+gap:20px;
+}
+
+.navigation li{
+border:none;
+}
+
+#courses{
+grid-template-columns:repeat(3,1fr);
+}
+
+}

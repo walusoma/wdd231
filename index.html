@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WDD231 Course Home | Walusoma Martin</title>
+
+<meta name="description" content="Course home page for Walusoma Martin, a Software Development student at BYU Pathway Worldwide. This page demonstrates HTML, CSS and JavaScript skills for WDD231 Web Frontend Development.">
+
+<meta name="author" content="Walusoma Martin">
+
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<script src="scripts/navigation.js" defer></script>
+<script src="scripts/date.js" defer></script>
+<script src="scripts/course.js" defer></script>
+
 </head>
+
 <body>
-    <h1>martin</h1>
+
+<header>
+
+<div class="logo">
+<span>Walusoma Martin</span>
+</div>
+
+<button id="menu">☰</button>
+
+<nav>
+<ul class="navigation">
+<li><a class="active" href="#">Home</a></li>
+<li><a href="#">Chamber</a></li>
+<li><a href="#">Final</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<h1>Home</h1>
+
+<section class="card">
+
+<h2>About Me</h2>
+
+<p>
+My name is Walusoma Martin. I am a Software Development student at BYU Pathway Worldwide from Uganda. I enjoy learning web development and improving my skills in HTML, CSS, and JavaScript. My goal is to become a professional software developer and build modern web applications that solve real world problems.
+</p>
+
+</section>
+
+<section class="card">
+
+<h2>Student Photo</h2>
+
+<img src="images/profile.webp" alt="Photo of Walusoma Martin" width="250">
+
+</section>
+
+<section class="card">
+
+<h2>Web Certificate Courses</h2>
+
+<div class="buttons">
+
+<button id="all">All</button>
+<button id="wdd">WDD</button>
+<button id="cse">CSE</button>
+
+</div>
+
+<div id="courses"></div>
+
+<p class="credits">Total Credits: <span id="totalCredits"></span></p>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="social">
+
+<a href="https://github.com/walusoma" target="_blank" aria-label="GitHub Profile">
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
+<path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.27 7.78 10.77.57.1.78-.25.78-.55v-2.17c-3.16.69-3.83-1.53-3.83-1.53-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.52-2.52-.29-5.17-1.26-5.17-5.62 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.47.11-3.07 0 0 .96-.31 3.15 1.17a10.9 10.9 0 012.87-.39c.97 0 1.95.13 2.87.39 2.18-1.48 3.14-1.17 3.14-1.17.63 1.6.24 2.78.12 3.07.73.8 1.16 1.82 1.16 3.06 0 4.37-2.66 5.33-5.19 5.61.41.35.77 1.03.77 2.08v3.08c0 .31.2.66.79.55A11.27 11.27 0 0023.25 11.75C23.25 5.48 18.27.5 12 .5z"/>
+</svg>
+</a>
+
+<a href="https://www.linkedin.com/in/walusoma-martin" target="_blank" aria-label="LinkedIn Profile">
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
+<path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.5 8h4v14h-4V8zm7 0h3.8v1.9h.05c.53-1 1.83-2.05 3.76-2.05 4.02 0 4.76 2.65 4.76 6.1V22h-4v-6.98c0-1.66-.03-3.8-2.31-3.8-2.31 0-2.67 1.8-2.67 3.67V22h-4V8z"/>
+</svg>
+</a>
+
+<a href="https://x.com/Da_Artin256" target="_blank" aria-label="X Profile">
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
+<path d="M18.244 2H21.5l-7.4 8.46L23 22h-6.828l-5.35-7.007L4.5 22H1.244l7.92-9.053L1 2h6.828l4.84 6.35L18.244 2z"/>
+</svg>
+</a>
+
+</div>
+
+<p>© <span id="year"></span> Walusoma Martin | Uganda</p>
+
+<p>Last Modified: <span id="lastModified"></span></p>
+
+</footer>
+
 </body>
 </html>
