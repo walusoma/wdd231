@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buwenge Chamber Directory</title>
+  <meta name="description" content="Explore businesses in Buwenge with our Chamber of Commerce directory.">
+  <meta name="author" content="Walusoma Martin">
 
-<title>Buwenge Chamber Directory</title>
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
 
-<meta name="description" content="Business directory for Buwenge Chamber of Commerce">
-<meta name="author" content="Walusoma Martin">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/small.css">
-<link rel="stylesheet" href="css/larger.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
 
-<script src="js/directory.js" defer></script>
+  <!-- social sharing  -->
+  <meta property="og:title" content="Buwenge Chamber of Commerce Directory">
+  <meta property="og:description" content="Discover local businesses in Buwenge through our Chamber of Commerce directory.">
+  <meta property="og:image" content="https://walusoma.github.io/wdd231/chamber/images/tech.jpg">
+  <meta property="og:url" content="https://walusoma.github.io/wdd231/chamber/directory.html">
 
+  <!-- Scripts -->
+  <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
+  <header>
+    <h1>Buwenge Chamber of Commerce</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="directory.html" class="active">Directory</a>
+    </nav>
+  </header>
 
-<header>
+  <main>
+    <h2>Business Directory</h2>
+    <div class="buttons">
+      <button id="grid">Grid</button>
+      <button id="list">List</button>
+    </div>
+    <section id="members" class="grid"></section>
+  </main>
 
-<h1>Buwenge Chamber of Commerce</h1>
-
-<nav>
-<a href="../index.html">Home</a>
-<a href="#">Directory</a>
-</nav>
-
-</header>
-
-<main>
-
-<h2>Business Directory</h2>
-
-<div class="buttons">
-<button id="grid">Grid</button>
-<button id="list">List</button>
-</div>
-
-<section id="members" class="grid"></section>
-
-</main>
-
-<footer>
-
-<p>© <span id="year"></span> Walusoma Martin | WDD231</p>
-
-<p>Last Modified: <span id="lastModified"></span></p>
-
-</footer>
-
+  <footer>
+    <p>&copy; <span id="year"></span> Walusoma Martin | WDD231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
 </body>
 </html>
