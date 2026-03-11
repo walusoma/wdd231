@@ -38,7 +38,7 @@ nav a.active {
   padding: 1rem;
 }
 
-.grid section {
+.grid .member-card {
   background: white;
   padding: 1rem;
   border-radius: 6px;
@@ -49,10 +49,19 @@ nav a.active {
   padding: 1rem;
 }
 
-.list section {
+.list .member-card {
   margin-bottom: 1rem;
   background: white;
   padding: 1rem;
+  display: flex;    
+  align-items: center;
+  gap: 1rem;
+}
+
+.list .member-card img {
+  width: 120px;         
+  height: auto;
+  border-radius: 6px;
 }
 
 footer {
