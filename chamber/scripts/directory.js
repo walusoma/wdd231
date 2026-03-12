@@ -15,19 +15,21 @@ function displayMembers(members) {
   container.innerHTML = "";
 
   members.forEach(member => {
+
     const card = document.createElement("div");
-    card.classList.add("member-card"); // add a class for styling
+    card.classList.add("member-card");
 
     card.innerHTML = `
-      <img src="images/${member.image}" alt="${member.name}">
+      <img src="images/${member.image}" alt="${member.name} logo">
       <h3>${member.name}</h3>
       <p>${member.address}</p>
       <p>${member.phone}</p>
-      <a href="${member.website}" target="_blank">Visit Website</a>
+      <a href="${member.website}" target="_blank" rel="noopener">Visit Website</a>
       <p>Membership Level: ${member.membership}</p>
     `;
 
     container.appendChild(card);
+
   });
 }
 
@@ -42,7 +44,3 @@ document.querySelector("#list").addEventListener("click", () => {
 });
 
 getMembers();
-
-// Footer info
-document.querySelector("#year").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;

@@ -8,11 +8,20 @@ header {
   background: #003366;
   color: white;
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin: 0;
   text-align: center;
+  flex: 1;
 }
 
 nav {
-  display: flex; /* Flex requirement */
+  display: flex;
   justify-content: center;
   gap: 1rem;
 }
@@ -20,15 +29,39 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
+  padding: 0.5rem 1rem;
 }
 
 nav a.active {
   text-decoration: underline;
 }
 
+#menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 .buttons {
   text-align: center;
-  margin: 1rem;
+  margin: 1rem 0;
+}
+
+.buttons button {
+  padding: 0.5rem 1rem;
+  margin: 0 5px;
+  border: none;
+  background: #003366;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: #0055aa;
 }
 
 .grid {
@@ -42,6 +75,8 @@ nav a.active {
   background: white;
   padding: 1rem;
   border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .list {
@@ -50,18 +85,41 @@ nav a.active {
 }
 
 .list .member-card {
-  margin-bottom: 1rem;
   background: white;
-  padding: 1rem;
-  display: flex;    
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+  padding: 10px;
+  display: flex;
   align-items: center;
   gap: 1rem;
+  border-radius: 6px;
+  text-align: left;
 }
 
 .list .member-card img {
-  width: 120px;         
+  display: none;
+}
+
+.member-card img {
+  width: 100%;
   height: auto;
   border-radius: 6px;
+}
+
+.member-card h3 {
+  margin: 10px 0 5px 0;
+  color: #003366;
+}
+
+.member-card a {
+  display: inline-block;
+  margin-top: 5px;
+  color: #0055aa;
+  text-decoration: none;
+}
+
+.member-card a:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -71,8 +129,17 @@ footer {
   padding: 1rem;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
+*/ @media (max-width: 767px) {
+  #menu {
+    display: block;
+  }
+
+  nav {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav.open {
+    display: flex;
+  }
 }

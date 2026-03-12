@@ -1,5 +1,27 @@
 @media (min-width: 768px) {
+
   .grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .list .member-card {
+    display: flex;
+    gap: 1rem;
+    padding: 15px;
+  }
+
+  .grid .member-card img {
+    display: block;
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  #menu {
+    display: none;
   }
 }

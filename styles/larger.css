@@ -13,6 +13,16 @@ gap:20px;
 border:none;
 }
 
+.home-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.home-grid .card:last-child{
+grid-column:span 2;
+}
+
 #courses{
 grid-template-columns:repeat(3,1fr);
 }

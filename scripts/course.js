@@ -11,6 +11,7 @@ const courses = [
 ];
 
 const courseContainer = document.querySelector("#courses");
+const creditDisplay = document.querySelector("#totalCredits");
 
 function displayCourses(courseList){
 
@@ -18,7 +19,7 @@ courseContainer.innerHTML="";
 
 courseList.forEach(course => {
 
-const card=document.createElement("div");
+const card = document.createElement("div");
 
 card.classList.add("course");
 
@@ -26,7 +27,7 @@ if(course.completed){
 card.classList.add("completed");
 }
 
-card.textContent=course.code;
+card.textContent = course.code;
 
 courseContainer.appendChild(card);
 
@@ -34,7 +35,7 @@ courseContainer.appendChild(card);
 
 const totalCredits = courseList.reduce((sum, course)=> sum + course.credits,0);
 
-document.querySelector("#totalCredits").textContent = totalCredits;
+creditDisplay.textContent = totalCredits;
 
 }
 

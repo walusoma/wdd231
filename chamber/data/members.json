@@ -1,64 +1,58 @@
 [
-{
-"name":"Buwenge Tech",
-"address":"Buwenge Town",
-"phone":"+256700111111",
-"website":"https://example.com",
-"image":"tech.jpg",
-"membership":3
-},
-
-{
-"name":"Nile Cafe",
-"address":"Jinja Road",
-"phone":"+256700222222",
-"website":"https://example.com",
-"image":"cafe.jpg",
-"membership":1
-},
-
-{
-"name":"Sunrise Hotel",
-"address":"Jinja City",
-"phone":"+256700333333",
-"website":"https://example.com",
-"image":"hotel.jpg",
-"membership":3
-},
-
-{
-"name":"Busoga Transport",
-"address":"Buwenge",
-"phone":"+256700444444",
-"website":"https://example.com",
-"image":"transport.jpg",
-"membership":2
-},
-
-{
-"name":"Jinja Supermarket",
-"address":"Jinja",
-"phone":"+256700555555",
-"website":"https://example.com",
-"image":"market.jpg",
-"membership":2
-},
-
-{
-"name":"Nile Electronics",
-"address":"Jinja",
-"phone":"+256700666666",
-"website":"https://example.com",
-"image":"electronics.jpg",
-"membership":1
-},
-
-{
-"name":"Farmers Market",
-"address":"Buwenge",
-"phone":"+256700777777",
-"website":"https://example.com",
-"image":"farm.jpg",
-"membership":1
-}
+  {
+    "name": "Buwenge Tech",
+    "address": "Buwenge Town",
+    "phone": "+256700111111",
+    "website": "https://example.com",
+    "image": "tech.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Nile Cafe",
+    "address": "Jinja Road",
+    "phone": "+256700222222",
+    "website": "https://example.com",
+    "image": "cafe.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Sunrise Hotel",
+    "address": "Jinja City",
+    "phone": "+256700333333",
+    "website": "https://example.com",
+    "image": "hotel.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Busoga Transport",
+    "address": "Buwenge",
+    "phone": "+256700444444",
+    "website": "https://example.com",
+    "image": "transport.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Jinja Supermarket",
+    "address": "Jinja",
+    "phone": "+256700555555",
+    "website": "https://example.com",
+    "image": "market.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Nile Electronics",
+    "address": "Jinja",
+    "phone": "+256700666666",
+    "website": "https://example.com",
+    "image": "electronics.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Farmers Market",
+    "address": "Buwenge",
+    "phone": "+256700777777",
+    "website": "https://example.com",
+    "image": "farm.jpg",
+    "membership": 1
+  }
 ]
