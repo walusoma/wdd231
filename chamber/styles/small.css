@@ -143,3 +143,39 @@ footer {
     display: flex;
   }
 }
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero .cta {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background: #003366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero .cta:hover {
+  background: #0055aa;
+}
+
+#spotlights {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  #spotlights {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
