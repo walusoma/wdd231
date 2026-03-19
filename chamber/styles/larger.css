@@ -10,6 +10,17 @@
     padding: 15px;
   }
 
+  main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.hero {
+  grid-column: span 2;
+}
+
   .grid .member-card img {
     display: block;
   }
