@@ -180,20 +180,34 @@ footer {
   background: #0055aa;
 }
 
-.cards {
-  display: grid;
-  gap: 10px;
-}
-
-.card {
-  padding: 15px;
+.cards .card {
+  padding: 1rem;
   border: 1px solid #ccc;
   text-align: center;
+  background: #eee;
+  margin-bottom: 1rem;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-in forwards;
 }
 
 @keyframes fadeIn {
   from {opacity: 0; transform: translateY(20px);}
   to {opacity: 1; transform: translateY(0);}
+}
+
+.modal-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #003366;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  background: #0055aa;
 }
 
 .join-grid {
@@ -214,15 +228,35 @@ footer {
 
    .join-grid {
     grid-template-columns: 2fr 1fr;
+    align-items: start;
   }
 
-.cards .card {
+  form {
+  width: 100%;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+  dialog {
+  border: none;
+  border-radius: 8px;
   padding: 1rem;
-  background: #eee;
-  margin-bottom: 1rem;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 1s ease-in forwards;
+}
+
+dialog::backdrop {
+  background: rgba(0,0,0,0.5);
 }
 
 .cards .card:nth-child(2) { animation-delay: 0.2s; }
