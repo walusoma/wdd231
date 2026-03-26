@@ -1,0 +1,13 @@
+// timestamp
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("timestamp").value = new Date().toISOString();
+});
+
+// modal functions
+function openModal(id) {
+  document.getElementById(id).showModal();
+}
+
+function closeModal(id) {
+  document.getElementById(id).close();
+}

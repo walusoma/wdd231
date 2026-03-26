@@ -180,6 +180,28 @@ footer {
   background: #0055aa;
 }
 
+.cards {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  padding: 15px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.join-grid {
+    grid-template-columns: 2fr 1fr;
+    display: grid;
+    gap: 1rem;
+  }
+
 #spotlights {
   display: grid;
   gap: 1rem;
@@ -189,4 +211,22 @@ footer {
   #spotlights {
     grid-template-columns: repeat(3, 1fr);
   }
+
+   .join-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+.cards .card {
+  padding: 1rem;
+  background: #eee;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.cards .card:nth-child(2) { animation-delay: 0.2s; }
+.cards .card:nth-child(3) { animation-delay: 0.4s; }
+.cards .card:nth-child(4) { animation-delay: 0.6s; }
+
 }
