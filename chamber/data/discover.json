@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Buwenge Central Market",
+    "address": "Buwenge Town",
+    "description": "Main market with fresh food and goods.",
+    "image": "images/market.webp"
+  },
+  {
+    "name": "River Nile Viewpoint",
+    "address": "Jinja Highway",
+    "description": "Beautiful view of the Nile River.",
+    "image": "images/nile.webp"
+  },
+  {
+    "name": "Buwenge Stadium",
+    "address": "Sports Road",
+    "description": "Football matches and events.",
+    "image": "images/stadium.webp"
+  },
+  {
+    "name": "Health Center",
+    "address": "Central Buwenge",
+    "description": "Main hospital for the community.",
+    "image": "images/health.webp"
+  },
+  {
+    "name": "Bus Park",
+    "address": "Main Street",
+    "description": "Transport hub for buses.",
+    "image": "images/bus.webp"
+  },
+  {
+    "name": "Craft Market",
+    "address": "Town Center",
+    "description": "Local handmade crafts.",
+    "image": "images/crafts.webp"
+  },
+  {
+    "name": "Library",
+    "address": "Education Street",
+    "description": "Study and reading center.",
+    "image": "images/library.webp"
+  },
+  {
+    "name": "Restaurants Zone",
+    "address": "Town Center",
+    "description": "Local Ugandan food spots.",
+    "image": "images/restaurant.webp"
+  }
+]
