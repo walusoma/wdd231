@@ -33,10 +33,11 @@ nav a {
 }
 
 nav a.active {
-  text-decoration: underline;
+  font-weight: bold;
   background: white;
   color: #003366;
   border-radius: 5px;
+  border-bottom: 3px solid #0055aa;
 }
 
 #menu {
@@ -65,6 +66,23 @@ nav a.active {
 
 .buttons button:hover {
   background: #0055aa;
+}
+
+button, .modal-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #003366;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover, .modal-btn:hover {
+  background: #0055aa;
+}
+
+.navigation {
+  list-style: none;
 }
 
 .grid {
@@ -211,7 +229,7 @@ footer {
 }
 
 .join-grid {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     display: grid;
     gap: 1rem;
   }
